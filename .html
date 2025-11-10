@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de Sites Profissionais</title>
+    <style>
+        /* Estilos gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #2c2c2c;
+            color: #f0f0f0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Cabeçalho */
+        header {
+            background: linear-gradient(135deg, #3a3a3a 0%, #1a1a1a 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            border-bottom: 3px solid #25D366;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            color: #ccc;
+        }
+        
+        /* Seção de modelos */
+        .models-section {
+            padding: 60px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2rem;
+            color: #fff;
+        }
+        
+        .models-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .model-card {
+            background: #3a3a3a;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #444;
+        }
+        
+        .model-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+        }
+        
+        .model-image {
+            height: 200px;
+            background-color: #444;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .model-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .model-card:hover .model-image img {
+            transform: scale(1.05);
+        }
+        
+        .model-content {
+            padding: 20px;
+        }
+        
+        .model-title {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        
+        .model-description {
+            color: #aaa;
+            margin-bottom: 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #25D366;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+        
+        .btn:hover {
+            background: #128C7E;
+            transform: translateY(-2px);
+        }
+        
+        /* Seção de chamada para ação */
+        .cta-section {
+            background: linear-gradient(135deg, #3a3a3a 0%, #2a2a2a 100%);
+            padding: 80px 0;
+            text-align: center;
+            color: #fff;
+            border-top: 3px solid #25D366;
+        }
+        
+        .cta-title {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+        
+        .cta-description {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            color: #ccc;
+        }
+        
+        .cta-btn {
+            background: #6a11cb;
+            font-size: 1.2rem;
+            padding: 15px 40px;
+        }
+        
+        .cta-btn:hover {
+            background: #580da8;
+        }
+        
+        /* Rodapé */
+        footer {
+            background: #1a1a1a;
+            color: #aaa;
+            padding: 30px 0;
+            text-align: center;
+            border-top: 1px solid #333;
+        }
+        
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            .section-title {
+                font-size: 1.7rem;
+            }
+            
+            .models-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <h1>Modelos de Sites Profissionais</h1>
+            <p>Encontre o modelo ideal para o seu negócio e solicite um orçamento personalizado</p>
+        </div>
+    </header>
+    
+    <!-- Seção de modelos -->
+    <section class="models-section">
+        <div class="container">
+            <h2 class="section-title">Nossos Modelos</h2>
+            <div class="models-grid">
+                <!-- Modelo 1: Lanchonete -->
+                <div class="model-card">
+                    <div class="model-image">
+                        <img src="https://images.unsplash.com/photo-1551782450-17144efb9c50?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Modelo de site para lanchonete">
+                    </div>
+                    <div class="model-content">
+                        <h3 class="model-title">Site para Lanchonete</h3>
+                        <p class="model-description">Apresente seu cardápio de forma atrativa, com sistema de pedidos online e integração com delivery.</p>
+                        <a href="https://wa.me/5521981478571?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento%20para%20um%20site%20de%20lanchonete" class="btn" target="_blank">Faça seu orçamento</a>
+                    </div>
+                </div>
+                
+                <!-- Modelo 2: Loja de Roupas -->
+                <div class="model-card">
+                    <div class="model-image">
+                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Modelo de site para loja de roupas">
+                    </div>
+                    <div class="model-content">
+                        <h3 class="model-title">Site para Loja de Roupas</h3>
+                        <p class="model-description">E-commerce completo com catálogo de produtos, carrinho de compras e integração com pagamentos.</p>
+                        <a href="https://wa.me/5521981478571?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento%20para%20um%20site%20de%20loja%20de%20roupas" class="btn" target="_blank">Faça seu orçamento</a>
+                    </div>
+                </div>
+                
+                <!-- Modelo 3: Estética Automotiva -->
+                <div class="model-card">
+                    <div class="model-image">
+                        <img src="https://images.unsplash.com/photo-1507136566006-cfc505b114fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Modelo de site para estética automotiva">
+                    </div>
+                    <div class="model-content">
+                        <h3 class="model-title">Site para Estética Automotiva</h3>
+                        <p class="model-description">Mostre seus serviços, agende horários e exiba trabalhos realizados para atrair mais clientes.</p>
+                        <a href="https://wa.me/5521981478571?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento%20para%20um%20site%20de%20estética%20automotiva" class="btn" target="_blank">Faça seu orçamento</a>
+                    </div>
+                </div>
+                
+                <!-- Modelo 4: Consultório Médico -->
+                <div class="model-card">
+                    <div class="model-image">
+                        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Modelo de site para consultório">
+                    </div>
+                    <div class="model-content">
+                        <h3 class="model-title">Site para Consultório</h3>
+                        <p class="model-description">Site profissional para médicos, com informações sobre especialidades, agendamento online e localização.</p>
+                        <a href="https://wa.me/5521981478571?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento%20para%20um%20site%20de%20consultório" class="btn" target="_blank">Faça seu orçamento</a>
+                    </div>
+                </div>
+                
+                <!-- Modelo 5: Restaurante -->
+                <div class="model-card">
+                    <div class="model-image">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Modelo de site para restaurante">
+                    </div>
+                    <div class="model-content">
+                        <h3 class="model-title">Site para Restaurante</h3>
+                        <p class="model-description">Ambiente sofisticado para apresentar seu restaurante, cardápio digital e reservas online.</p>
+                        <a href="https://wa.me/5521981478571?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento%20para%20um%20site%20de%20restaurante" class="btn" target="_blank">Faça seu orçamento</a>
+                    </div>
+                </div>
+                
+                <!-- Modelo 6: Academia -->
+                <div class="model-card">
+                    <div class="model-image">
+                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Modelo de site para academia">
+                    </div>
+                    <div class="model-content">
+                        <h3 class="model-title">Site para Academia</h3>
+                        <p class="model-description">Divulgue seus planos, modalidades e promova uma vida saudável para atrair novos alunos.</p>
+                        <a href="https://wa.me/5521981478571?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento%20para%20um%20site%20de%20academia" class="btn" target="_blank">Faça seu orçamento</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Seção de chamada para ação -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">Não encontrou o que procurava?</h2>
+            <p class="cta-description">Criamos sites personalizados para qualquer tipo de negócio. Entre em contato conosco e vamos desenvolver a solução perfeita para você!</p>
+            <a href="https://wa.me/5521981478571?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento%20para%20um%20site%20personalizado" class="btn cta-btn" target="_blank">Fale conosco no WhatsApp</a>
+        </div>
+    </section>
+    
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>Criamos sites profissionais para impulsionar seu negócio</p>
+            <p>Entre em contato: (21) 98147-8571</p>
+        </div>
+    </footer>
+</body>
+</html>
